@@ -1,0 +1,19 @@
+
+const addUser = async (user) => {
+    let api_url = "http"
+
+    const requestInfos = new Request(
+        api_url,
+        {
+            method: "post",
+            headers: { "Content-type": "application/json" },
+            body: JSON.stringify(user)
+        }
+    );
+    const request = await fetch(requestInfos);
+    const response = await request.json();
+
+    return response;
+}
+
+export { addUser };
