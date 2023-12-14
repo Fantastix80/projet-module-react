@@ -1,0 +1,29 @@
+
+.navigation {
+    width: 100%;
+    height: 5rem;
+    background-color: #f7f7f7;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.navigation ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation ul .nav-start {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.navigation ul .nav-end {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
