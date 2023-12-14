@@ -1,3 +1,5 @@
+import '../../assets/css/connexion.css'
+
 
 const Connexion = () => {
     return (
@@ -17,6 +19,8 @@ const Connexion = () => {
             name="password"
             placeholder="Entrez votre mdp"
           />
+        <span>Message d'erreur *</span>
+
         <button type="submit">
           Valider
         </button>
