@@ -32,3 +32,12 @@ Currently, two official plugins are available:
   3) Redémarrez votre json-server, l'erreur devrait disparaître
   4) Une fois terminé, il est fortement conseillé de remettre en place cette sécurité : Set-ExecutionPolicy AllSigned
 
+API PHP:
+Pour ce qu'il s'agit de l'API en php permettant de faire le lien entre le projet react et la base de donnée, il vous faudra lancer le serveur xampp (apache et mysql).
+
+Une fois cela fait, rendez vous sur phpmyadmin afin de créer la base de donnée. Le script de la base de donnée se situe dans le dossier de l'api php.
+
+Finalement, il vous suffira d'ouvrir un cmd à l'emplacement de l'api php et d'exécuter la commande suivant: "php -S localhost:8000" afin de rendre l'api accesible par le projet react.
+
+
+
