@@ -23,10 +23,10 @@ const Nav = () => {
     return (
         <>
             <nav className="navigation">
-                <h1 className="titre-site">Tournois de jeux</h1>
+                <h1 className="titre-site">Tournois <br/> de jeux</h1>
                 <ul>
                     <div className="nav-start">
-                        <li><Link to={ "/" }>Accueil</Link></li>
+                       <li><Link to={ "/" }>Accueil</Link></li>
                         {
                             (user.isConnected)
                             ?
