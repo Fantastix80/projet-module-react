@@ -1,9 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { httpHelper } from '../../../httpHelper';
 import '../../assets/css/listeTournois.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { UserContext } from '../../context/UserProvider';
 
 const ListeTournois = () => {
+    const {user, setUser} = useContext(UserContext);
+    const navigate = useNavigate();
+    if (user.isConnected !== true) {
+      navigate("/");
+    }
 
     const [gameData, setGameData] = useState([]);
 
