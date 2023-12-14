@@ -28,7 +28,15 @@ const Inscription = () => {
                         placeholder="Entrez votre mdp"
                     />
                     <span>Message d'erreur *</span>
+                    <br/>
+                    <br/>
 
+                    <div>
+                    <input type="checkbox" id="exampleUniq"/>
+                    <label for="exampleUniq">J'accepte les Conditions Générales d'utilisation</label>
+                    </div>
+                    <br/>
+                    
                     <button type="submit">
                     Valider
                     </button>
