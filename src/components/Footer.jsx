@@ -14,16 +14,15 @@ const Footer = () => {
 
         <div class="row">
         <ul>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Career</a></li>
+        <li><a href="#">Contactez Nous</a></li>
+        <li><a href="#">Nos Services</a></li>
+        <li><a href="#">Politique de Confidentialité</a></li>
+        <li><a href="#">Termes & Conditions</a></li>
         </ul>
         </div>
 
         <div class="row">
-        INFERNO Copyright © 2021 Inferno - All rights reserved || Designed By: Mahesh 
+        Tournois de jeux video © 2023 - Tous droits réservés || Conçu par: Vincent, Brassica, jean 
         </div>
         </div>
         </footer>
