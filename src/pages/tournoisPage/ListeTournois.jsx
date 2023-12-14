@@ -4,12 +4,20 @@ import '../../assets/css/listeTournois.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/UserProvider';
 
-const ListeTournois = () => {
-    const {user, setUser} = useContext(UserContext);
-    const navigate = useNavigate();
-    if (user.isConnected !== true) {
+const useRedirectIfNotConnected = (user) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user.isConnected) {
       navigate("/");
     }
+  }, [user, navigate]);
+};
+
+const ListeTournois = () => {
+    const {user, setUser} = useContext(UserContext);
+
+    useRedirectIfNotConnected(user);
 
     const [gameData, setGameData] = useState([]);
 
@@ -34,7 +42,7 @@ const ListeTournois = () => {
               <h2>{game.title}</h2>
               <img src={game.gameDetails.imgJacket} alt={game.title} />
               <Link to={`/detailsJeux/${game.id}`}>Voir les détails</Link>
-              <p>Editeur : {game.gameDetails.developer}</p>
+              <p className="TxtEditeurTournoi">Editeur : {game.gameDetails.developer}</p>
             </div>
           ))}
       </div>
