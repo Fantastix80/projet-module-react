@@ -46,7 +46,7 @@ const Connexion = () => {
                 <h1>Connexion</h1>
                 <form>
                     <input type="text" name="email" placeholder="Entrez votre email" ref={emailInput}/>
-                    <input type="text" name="password" placeholder="Entrez votre mdp" ref={mdpInput}/>
+                    <input type="password" name="password" placeholder="Entrez votre mdp" ref={mdpInput}/>
                     <br/>
                     <span ref={errorMessage}></span>
                     <button type="submit" onClick={validateForm}>Valider</button>
