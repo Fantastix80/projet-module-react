@@ -4,6 +4,7 @@ import HomePage from "../pages/homePage/HomePage";
 import Connexion from "../pages/connectionPage/Connexion";
 import Inscription from "../pages/connectionPage/Inscription";
 import ListeTournois from "../pages/tournoisPage/ListeTournois";
+import DetailsJeux from "../pages/tournoisPage/DetailsJeux";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: "listeTournois",
                 element: <ListeTournois/>
+            },
+            {
+                path: "detailsJeux/:id",
+                element: <DetailsJeux/>
             }
         ]
     }

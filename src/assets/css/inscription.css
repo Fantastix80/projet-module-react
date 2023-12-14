@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
   }
   
   .Inscription form {
@@ -28,6 +27,10 @@
     border-radius: 3px;
     border: 1px solid #ccc;
   }
+
+  .Inscription input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
   
   .Inscription button {
     width: 100%;
@@ -38,9 +41,17 @@
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 1rem;
   }
   
   .Inscription button:hover {
     background-color: #0056b3;
   }
-  
+
+  .Inscription button:disabled {
+    background-color: gray;
+  }
+
+  .Inscription span {
+    color: red;
+  }
