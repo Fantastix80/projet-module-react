@@ -1,48 +1,44 @@
-img{
+.imgFond {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-height: 450px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .GameTitleDetails,
+  .GameDescriptionDetails,
+  .GameDeveloperDetails,
+  .GameReleaseDateDetails {
     text-align: center;
+    padding-top: 2%;
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  .GameTitleDetails
+    {
+        font-size: xx-large;
+    }
 
-}
-
-.GameTitleDetails{
-    font-size: 3rem;
-    padding-top: 3%;
+.container {
     text-align: center;
-}
-
-.GameDescriptionDetails{
-    font-size: 1.5rem;
-    padding-top: 3%;
-    text-align: center;
-}
-
-.imgFond{
-    width: 100%;
-    object-fit: cover;
-    text-align: center;
-}
-
-.btnInscription{
-    font-size: 1.5rem;
-    text-align: center;
-    border-radius: 5%;
-    background-color: #1E90FF;
+  }
+  
+  .btnInscription {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    background-color: #02080e;
     color: white;
-    padding: 1%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
+    border-radius: 10px;
+  }
 
-.GameDeveloperDetails{
-    font-size: 1.5rem;
-    padding-top: 3%;
-    text-align: center;
-}
-
-.GameEditorDetails{
-    font-size: 1.5rem;
-    padding-top: 3%;
-    text-align: center;
-}
+  .btnInscription:hover {
+    background-color: #50575f;
+  }
+  
