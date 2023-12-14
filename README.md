@@ -6,3 +6,24 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+-------- Démarrage du projet (Il est indispensable d'éxecuter ces commandes dans un terminal) --------
+
+  React + ViteJs :
+  Installation des packages : npm i
+  Exécution de l'application web : npm run dev
+
+  API :
+  Installation des packages json-server : npm i -g json-server
+  Exécution de json-server : json-server --watch db.json
+
+  Si vous rencontrez cette erreur (Veuillez suivre ces étapes): https://media.discordapp.net/attachments/1168897800340254760/1184873237704871942/image.png?ex=658d8e31&is=657b1931&hm=21bbd2101608ef0b725b90e8b700420fddf5a1edf5c330e56aab2920d0f90c31&=&format=webp&quality=lossless&width=1440&height=316
+
+  
+  1) Ouvrir Windows PowerShell en administrateur
+  2) Exécutez cette commande (pour retirer temporairement cette sécurité): Set-ExecutionPolicy RemoteSigned
+  3) Redémarrez votre json-server, l'erreur devrait disparaître
+  4) Une fois terminé, il est fortement conseillé de remettre en place cette sécurité : Set-ExecutionPolicy AllSigned
+
