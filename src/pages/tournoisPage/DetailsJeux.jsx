@@ -61,9 +61,9 @@ const DetailJeux = () => {
   }, [id]);
 
     return (
-        <div>
+        <div className='container'>
             <img className="imgFond" src={gameDetailsData?.gameDetails?.imgDetailsJeu} alt={gameDetailsData?.title} />
-            <h2 className='GameTitleDetails'>{gameDetailsData?.title}</h2>
+            <h1 className='GameTitleDetails'>{gameDetailsData?.title}</h1>
             <p className='GameDescriptionDetails'>{gameDetailsData?.gameDetails?.description}</p>
             <p className='GameDeveloperDetails'>Editeur : {gameDetailsData?.gameDetails?.developer}</p>
             <p className='GameReleaseDateDetails'>Plateforme : {gameDetailsData?.gameDetails?.platform ? Object.keys(gameDetailsData.gameDetails.platform).join(', ') : 'N/A'}</p>

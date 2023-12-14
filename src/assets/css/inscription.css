@@ -49,7 +49,7 @@
   }
 
   .Inscription button:disabled {
-    background-color: gray;
+    background-color: rgb(221, 69, 69);
   }
 
   .Inscription span {
