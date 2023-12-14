@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { httpHelper } from '../../../httpHelper';
+import '../../assets/css/detailsJeux.css';
 
 const DetailJeux = () => {
   const { id } = useParams();
@@ -18,14 +19,17 @@ const DetailJeux = () => {
     fetchData();
   }, [id]);
 
-  return (
-    <div>
-      <h2>Détails du jeu avec l'ID {id}</h2>
-      <h2>{gameDetailsData.title}</h2>
-        <img src={gameDetailsData.gameDetails.imgDetailsJeu} alt={gameDetailsData.title} />
-      <p>tqt</p>
-    </div>
-  );
+    return (
+        <div>
+            <img className="imgFond" src={gameDetailsData?.gameDetails?.imgDetailsJeu} alt={gameDetailsData?.title} />
+            <h2 className='GameTitleDetails'>{gameDetailsData?.title}</h2>
+            <p className='GameDescriptionDetails'>{gameDetailsData?.gameDetails?.description}</p>
+            <p className='GameDeveloperDetails'>Editeur : {gameDetailsData?.gameDetails?.developer}</p>
+            <p className='GameReleaseDateDetails'>Plateforme : {gameDetailsData?.gameDetails?.platform ? Object.keys(gameDetailsData.gameDetails.platform).join(', ') : 'N/A'}</p>
+
+            <button className='btnInscription'>S'inscrire au tournoi</button>
+        </div>
+    );
 };
 
 export default DetailJeux;

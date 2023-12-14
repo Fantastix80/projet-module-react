@@ -28,7 +28,7 @@ const ListeTournois = () => {
               <h2>{game.title}</h2>
               <img src={game.gameDetails.imgJacket} alt={game.title} />
               <Link to={`/detailsJeux/${game.id}`}>Voir les détails</Link>
-              <p>Editeur : {game.gameDetails.developer}</p>
+              <p className="TxtEditeurTournoi">Editeur : {game.gameDetails.developer}</p>
             </div>
           ))}
       </div>
