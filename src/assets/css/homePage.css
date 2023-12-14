@@ -1,0 +1,18 @@
+.text-container {
+    padding-left: 25%; 
+}
+.button-container {
+    text-align: center; /* Centre les éléments horizontalement */
+    margin-top: 20px; /* Espacement vers le haut pour la démonstration */
+}
+
+.custom-button {
+    padding: 10px 20px; /* Rembourrage pour les boutons */
+    margin: 5px; /* Marge entre les boutons */
+    background-color: #3498db; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Ajoute un arrondi aux coins */
+    cursor: pointer; /* Curseur au survol du bouton */
+}
+

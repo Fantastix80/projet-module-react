@@ -2,7 +2,7 @@ import { useContext, useRef, useState } from 'react';
 import '../../assets/css/inscription.css'
 import { UserContext } from '../../context/UserProvider';
 import { addUser } from '../../services/api';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 let isPseudoValid;
@@ -114,6 +114,10 @@ const Inscription = () => {
                     <input type="checkbox" name="acceptCGU" onInput={validateInputs}/>
                     <label>J'accepte les Conditions Générales d'utilisation</label>
                     <button type="submit" disabled={isButtonDisabled} onClick={validateForm}> Valider </button>
+                    <br/>
+                    <br/>
+                    <p>Vous êtes déjà membre? <Link to={"/connexion"}>Connexion</Link></p>
+
                 </form>
             </div>
         </>
