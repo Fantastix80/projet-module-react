@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "../assets/css/nav.css"
 
 const Nav = () => {
@@ -8,12 +9,12 @@ const Nav = () => {
                 <h1 className="titre-site">Tournois de jeux</h1>
                 <ul>
                     <div className="nav-start">
-                        <li><a href="/">Accueil</a></li>
-                        <li><a href="#">Liste des tournois</a></li>
+                        <li><Link to={ "/" }>Accueil</Link></li>
+                        <li><Link to={ "/listeTournois" }>Liste des tournois</Link></li>
                     </div>
                     <div className="nav-end">
-                        <li><a href="#">Se connecter</a></li>
-                        <li><a href="#">S'inscrire</a></li>
+                        <li><Link to={ "/connexion" }>Se connecter</Link></li>
+                        <li><Link to={ "/inscription" }>S'inscrire</Link></li>
                     </div>
                 </ul>
             </nav>
