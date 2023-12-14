@@ -1,6 +1,6 @@
 
 const addUser = async (user) => {
-    let api_url = "http"
+    let api_url = "http://localhost:8000/actions/createAccount.php"
 
     const requestInfos = new Request(
         api_url,
@@ -12,7 +12,7 @@ const addUser = async (user) => {
     );
     const request = await fetch(requestInfos);
     const response = await request.json();
-
+    
     return response;
 }
 
