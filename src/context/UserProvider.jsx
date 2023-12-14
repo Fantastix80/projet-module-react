@@ -4,9 +4,9 @@ const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
     const [user, setUser] = useState({
-        isConnected: true,
-        email: "jeanvw007@gmail.com",
-        pseudo: "Fantastix80"
+        isConnected: false,
+        email: "",
+        pseudo: ""
     });
     return (
         <>

@@ -27,6 +27,10 @@
     border-radius: 3px;
     border: 1px solid #ccc;
   }
+
+  .Inscription input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
   
   .Inscription button {
     width: 100%;
@@ -43,4 +47,11 @@
   .Inscription button:hover {
     background-color: #0056b3;
   }
-  
+
+  .Inscription button:disabled {
+    background-color: gray;
+  }
+
+  .Inscription span {
+    color: red;
+  }
